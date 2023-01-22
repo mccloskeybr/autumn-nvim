@@ -1,4 +1,4 @@
-# Autum
+# Autum-nvim
 
 Autum is a NeoVim theme that uses lots of warm colors.
 Comparable to various versions of gruvbox.
@@ -14,12 +14,24 @@ Under `/extras`.
 
 ## Installation
 
+Using Lazy.nvim:
+
+```
+return {
+  'mccloskeybr/autumn-nvim',
+  lazy = false,
+  priority = 1000,
+  config = function()
+    vim.cmd('colorscheme autumn-nvim')
+  end
+})
+```
+
 Using packer:
 
 ```
 require('packer').use({
   'mccloskeybr/autumn-nvim',
-  requires = { 'rktjmp/lush.nvim' },
   config = function()
     vim.cmd('colorscheme autumn-nvim')
   end
