@@ -24,7 +24,7 @@ return {
   config = function()
     vim.cmd('colorscheme autumn-nvim')
   end
-})
+}
 ```
 
 Using packer:
