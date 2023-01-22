@@ -1,0 +1,1 @@
+require('autumn-nvim').load()
