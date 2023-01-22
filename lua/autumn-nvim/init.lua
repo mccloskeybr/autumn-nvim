@@ -1,3 +1,6 @@
+-- code structure heavily inspired by kanagawa.nvim
+-- https://github.com/rebelot/kanagawa.nvim
+
 local M = {}
 
 local function set_highlights(hlgroups)
