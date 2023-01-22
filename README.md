@@ -1,7 +1,7 @@
 # Autum
 
-Autum is a [lush](http://git.io/lush.nvim)-based theme for NeoVim that uses lots
-of warm colors. Comparable to various versions of gruvbox.
+Autum is a NeoVim theme that uses lots of warm colors.
+Comparable to various versions of gruvbox.
 
 ![example](/screenshot.png)
 
