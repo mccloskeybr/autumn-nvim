@@ -31,7 +31,7 @@ return {
       error = colors.crimson,
 
       constant = colors.sage,
-      string = colors.sage,
+      string = colors.olive,
       number = colors.sage,
       identifier = colors.pink,
       func = colors.pink,
