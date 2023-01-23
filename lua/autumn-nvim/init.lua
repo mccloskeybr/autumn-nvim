@@ -4,8 +4,6 @@
 local M = {}
 
 local function set_highlights(hlgroups)
-  -- vim.cmd('highlight Normal guibg=' .. hlgroups.Normal.bg .. ' guifg=' .. hlgroups.Normal.fg)
-  -- hlgroups.Normal = nil
   for group, colors in pairs(hlgroups) do
     if not vim.tbl_isempty(colors) then
         vim.api.nvim_set_hl(0, group, colors)
@@ -14,7 +12,8 @@ local function set_highlights(hlgroups)
 end
 
 M.config = {
-  colors = {}
+  colors = {},
+  theme = 'default',
 }
 
 function M.setup(config)
@@ -25,7 +24,8 @@ function M.load()
   vim.o.termguicolors = true
 
   local colors = require('autumn-nvim.colors').setup(M.config)
-  local hlgroups = require('autumn-nvim.hlgroups').setup(colors)
+  local theme = require('autumn-nvim.themes')[M.config.theme](colors)
+  local hlgroups = require('autumn-nvim.hlgroups').setup(theme)
   set_highlights(hlgroups)
 end
 

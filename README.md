@@ -66,4 +66,5 @@ require('packer').use({
 
 ## Acknowledgements
 
+* [Gruvbox](https://github.com/gruvbox-community/gruvbox)
 * [Kanagawa.nvim](https://github.com/rebelot/kanagawa.nvim)
