@@ -81,6 +81,7 @@ function M.setup(theme)
     Operator = { link = 'Statement' },
     Keyword = { link = 'Statement' },
     Exception = { link = 'Statement' },
+    sdlStatement = { fg = theme.statement },
 
     PreProc = { fg = theme.preproc },
     Include = { link = 'PreProc' },
